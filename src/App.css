@@ -8,7 +8,7 @@
 }
 
 .container {
-  padding: 5rem 6rem 2rem 6rem;
+  padding: 5rem 7em 2rem 7rem;
   background: linear-gradient(180deg, #000000 0%, #01205e 74.52%);
   opacity: 0.8;
   border-radius: 48px;
@@ -64,4 +64,69 @@
 
 .description {
   margin: 2rem auto 3rem auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 0.825em;
+}
+
+.button {
+  position: relative;
+  display: block;
+  border: 1px solid transparent;
+  padding: 0.6em 1.5em 0.3em;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  background-color: #ffffff;
+  border-radius: 32px;
+  white-space: nowrap;
+
+  color: #012161;
+}
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.button::after {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #a2aec8;
+  border-radius: inherit;
+  content: "";
+  transition: left 0.2s ease-out, top 0.2s ease-out;
+}
+
+.button:hover::after {
+  left: 5px;
+  top: 5px;
+}
+
+li:not(:last-of-type) {
+  margin-bottom: 1.3rem;
+}
+
+footer {
+  margin-top: auto;
 }
