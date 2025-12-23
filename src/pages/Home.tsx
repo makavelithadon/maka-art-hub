@@ -1,39 +1,50 @@
+import { useIntl } from "react-intl";
 import { Link } from "react-router";
 
-export const Home = () => (
-  <>
-    <div className="description">
-      <h1>🇫🇷 Anime Paint Artist</h1>
-      <h2>🇫🇷 Have a wonderful day – Maka Art ❤️</h2>
-    </div>
-    <nav>
-      <ul>
-        <li>
-          <Link className="button" to="/materials">
-            Materials I use
-          </Link>
-        </li>
-        <li>
-          <Link className="button" to="/commission">
-            Commission info
-          </Link>
-        </li>
-        <li>
-          <Link className="button" to="/social">
-            Social links
-          </Link>
-        </li>
-        <li>
-          <Link className="button" to="/support-me">
-            Support me (ko-fi)
-          </Link>
-        </li>
-        <li>
-          <Link className="button" to="/paypal-me">
-            PayPal.me
-          </Link>
-        </li>
-      </ul>
-    </nav>
-  </>
-);
+export const Home = () => {
+  const intl = useIntl();
+
+  return (
+    <>
+      <div className="description">
+        <h1 className="poppins-bold fz-s">🇫🇷 Anime Paint Artist</h1>
+        <h2>
+          <span className="poppins-medium fz-m">Have a wonderful day – </span>
+          <span className="zooja fz-l">Maka Art ❤️</span>
+        </h2>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <Link className="button" to="/materials">
+              {intl.formatMessage({
+                id: "materials",
+              })}
+            </Link>
+          </li>
+          <li>
+            <Link className="button" to="/commission">
+              {intl.formatMessage({
+                id: "comissionInfo",
+              })}
+            </Link>
+          </li>
+          <li>
+            <Link className="button" to="/social">
+              {intl.formatMessage({
+                id: "socialLinks",
+              })}
+            </Link>
+          </li>
+          <li>
+            <Link className="button" to="/support-me">
+              {intl.formatMessage({
+                id: "supportMe",
+              })}
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </>
+  );
+};

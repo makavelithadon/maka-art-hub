@@ -1,10 +1,11 @@
+import { FormattedMessage } from "react-intl";
 import { Outlet } from "react-router";
-
-// Example
+import { LangSwitcher } from "./lang/LangSwitcher";
 
 export const Layout = () => {
   return (
     <>
+      <LangSwitcher />
       <div className="container">
         <img
           className="picture"
@@ -12,10 +13,15 @@ export const Layout = () => {
           alt="Maka Art profile picture"
         />
         <img className="logo" src="src/assets/logo.png" alt="Maka Art logo" />
-        <Outlet context />
+        <Outlet />
       </div>
       <footer>
-        <p>Made with ♥️... and a keyboard!</p>
+        <p className="fz-xl">
+          <FormattedMessage id="footer" />
+        </p>
+        <p className="poppins-medium">
+          © Maka Art – {new Date().getFullYear()}
+        </p>
       </footer>
     </>
   );
