@@ -1,15 +1,36 @@
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 6rem 2rem 2rem 2rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container {
+  padding: 5rem 6rem 2rem 6rem;
+  background: linear-gradient(180deg, #000000 0%, #01205e 74.52%);
+  opacity: 0.8;
+  border-radius: 48px;
+  position: relative;
+}
+
+.picture {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #ffffff;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  display: block;
+  width: 130px;
+  margin: 0 auto;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
@@ -39,4 +60,8 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.description {
+  margin: 2rem auto 3rem auto;
 }
