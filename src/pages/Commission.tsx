@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export const Commission = () => {
   return (
     <>
@@ -226,46 +228,16 @@ export const Commission = () => {
         </p>
         <ul id="buttons02" className="buttons">
           <li>
-            <a
-              href="https://www.instagram.com/kana.paints/"
-              className="button n01"
-            >
-              <svg aria-labelledby="icon-title">
-                <title id="icon-title">Instagram</title>
-                <use xlinkHref="#icon-85976685de3e4af37529a1ce5d57d2a7" />
-              </svg>
-              <span className="label">Envoyer une demande via Instagram</span>
-            </a>
+            <Link className="button" to="https://www.instagram.com/maka__a_r_t">
+              Envoyer une demande via Instagram
+            </Link>
           </li>
           <li>
-            <a
-              href="mailto:inquire.kanapaints@gmail.com"
-              className="button n02"
-            >
-              <svg aria-labelledby="icon-title">
-                <title id="icon-title">Email</title>
-                <use xlinkHref="#icon-c3c8e1063e3b7f84f6b54712741de139" />
-              </svg>
-              <span className="label">Envoyer une demande par e-mail</span>
-            </a>
+            <Link className="button" to="https://www.instagram.com/maka__a_r_t">
+              Envoyer une demande par e-mail
+            </Link>
           </li>
         </ul>
-        <ul id="buttons01" className="buttons">
-          <li>
-            <a href="/" className="button n01">
-              <svg aria-labelledby="icon-title">
-                <title id="icon-title">Flèche gauche</title>
-                <use xlinkHref="#icon-fe5d5fdb64e50b34c3e536f93a94c91e" />
-              </svg>
-              <span className="label">retour à la page principale</span>
-            </a>
-          </li>
-        </ul>
-        <div id="credits" className="icc-credits">
-          <span>
-            <a href="https://carrd.co/build?ref=auto">Créé avec Carrd</a>
-          </span>
-        </div>
       </div>
 
       {/* <div className="inner">

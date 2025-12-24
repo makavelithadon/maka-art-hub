@@ -1,34 +1,58 @@
 #root {
   margin: 0 auto;
-  padding: 6rem 2rem 2rem 2rem;
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
 
+@media screen and (min-width: 560px) {
+  #root {
+    padding: 6rem 2rem 2rem 2rem;
+  }
+}
+
 .container {
-  padding: 5rem 7em 2rem 7rem;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.8) 0%,
-    rgb(1, 32, 94, 0.8) 74.52%
-  );
-  border-radius: 48px;
   position: relative;
   max-width: 480px;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 560px) {
+  .container {
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgb(1, 32, 94, 0.8) 74.52%
+    );
+    border-radius: 48px;
+    padding: 5rem 3em 2rem 3rem !important;
+  }
+}
+
+@media screen and (min-width: 690px) {
+  .container {
+    padding: 5rem 7em 2rem 7rem !important;
+  }
 }
 
 .picture {
-  position: absolute;
-  left: 50%;
-  top: 0;
   width: 80px;
   height: 80px;
-  transform: translate(-50%, -50%);
   border-radius: 50%;
   overflow: hidden;
   border: 5px solid #ffffff;
+  margin: 2rem auto;
+}
+
+@media screen and (min-width: 560px) {
+  .picture {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+    margin: 0;
+  }
 }
 
 .logo {
@@ -106,6 +130,12 @@ h2 {
   -webkit-tap-highlight-color: none;
 }
 
+@media screen and (min-width: 560px) {
+  .button {
+    min-width: 200px;
+  }
+}
+
 ul {
   padding: 0;
   list-style-type: none;
@@ -151,6 +181,7 @@ footer {
 
 .lang-switcher {
   position: fixed;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   top: 20px;

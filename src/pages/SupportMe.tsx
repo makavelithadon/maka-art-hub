@@ -7,11 +7,7 @@ export const SupportMe = () => {
   return (
     <ul>
       <li>
-        <Link
-          className="button"
-          to="https://paypal.me/rduconseil"
-          style={{ minWidth: 200 }}
-        >
+        <Link className="button" to="https://paypal.me/rduconseil">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -43,11 +39,7 @@ export const SupportMe = () => {
         </Link>
       </li>
       <li>
-        <Link
-          className="button"
-          to="https://ko-fi.com/maka_art"
-          style={{ minWidth: 200 }}
-        >
+        <Link className="button" to="https://ko-fi.com/maka_art">
           <img src="https://storage.ko-fi.com/cdn/logomarkLogo.png" />
           {intl.formatMessage({
             id: "kofi",
