@@ -9,10 +9,14 @@
 
 .container {
   padding: 5rem 7em 2rem 7rem;
-  background: linear-gradient(180deg, #000000 0%, #01205e 74.52%);
-  opacity: 0.8;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgb(1, 32, 94, 0.8) 74.52%
+  );
   border-radius: 48px;
   position: relative;
+  max-width: 480px;
 }
 
 .picture {
@@ -78,7 +82,9 @@ h2 {
 
 .button {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid transparent;
   padding: 0.5em 1.5em 0.2em;
   font-size: 1.5rem;
@@ -90,6 +96,7 @@ h2 {
   border-radius: 48px;
   white-space: nowrap;
   font-family: "Zooja Pro";
+  gap: 0.8em;
 
   color: #012161;
 }
@@ -123,6 +130,14 @@ ul {
 .button:hover::after {
   left: 5px;
   top: 5px;
+}
+
+.button svg,
+.button img {
+  width: 1.5em;
+  position: relative;
+  top: -4px;
+  fill: #012161;
 }
 
 li:not(:last-of-type) {

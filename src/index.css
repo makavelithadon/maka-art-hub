@@ -35,19 +35,19 @@ body {
   min-height: 100vh;
 }
 .fz-s {
-  font-size: 0.9em;
+  font-size: 0.9em !important;
 }
 
 .fz-m {
-  font-size: 1.2em;
+  font-size: 1.2em !important;
 }
 
 .fz-l {
-  font-size: 1.7em;
+  font-size: 1.7em !important;
 }
 
 .fz-xl {
-  font-size: 2em;
+  font-size: 2em !important;
 }
 
 .zooja {
@@ -160,4 +160,8 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: italic;
+}
+
+ul {
+  margin: 0;
 }

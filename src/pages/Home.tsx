@@ -1,5 +1,6 @@
 import { useIntl } from "react-intl";
 import { Link } from "react-router";
+import { paths } from "../routes";
 
 export const Home = () => {
   const intl = useIntl();
@@ -16,30 +17,37 @@ export const Home = () => {
       <nav>
         <ul>
           <li>
-            <Link className="button" to="/materials">
+            <Link className="button" to={paths.materials}>
               {intl.formatMessage({
                 id: "materials",
               })}
             </Link>
           </li>
           <li>
-            <Link className="button" to="/commission">
+            <Link className="button" to={paths.commission}>
               {intl.formatMessage({
                 id: "comissionInfo",
               })}
             </Link>
           </li>
           <li>
-            <Link className="button" to="/social">
+            <Link className="button" to={paths.social}>
               {intl.formatMessage({
                 id: "socialLinks",
               })}
             </Link>
           </li>
           <li>
-            <Link className="button" to="/support-me">
+            <Link className="button" to={paths.supportMe}>
               {intl.formatMessage({
                 id: "supportMe",
+              })}
+            </Link>
+          </li>
+          <li>
+            <Link className="button" to={paths.artworks}>
+              {intl.formatMessage({
+                id: "artworks",
               })}
             </Link>
           </li>

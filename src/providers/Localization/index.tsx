@@ -50,9 +50,6 @@ const loadMessages = (locale: string): { [key: string]: string } => {
 
 export const Localization = ({ children }: PropsWithChildren) => {
   const language = getLanguage();
-
-  console.log({ language });
-
   const [locale, setLocale] = useState<LanguageContextType["locale"]>(language);
 
   return (
