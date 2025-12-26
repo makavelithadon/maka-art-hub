@@ -44,7 +44,7 @@ export const Layout = () => {
         </div>
       ) : null}
       <footer>
-        <p className="fz-xl">
+        <p className="fz-xl mb-1">
           <FormattedMessage id="footer" />
         </p>
         <p className="poppins-medium">©Maka Art – {new Date().getFullYear()}</p>

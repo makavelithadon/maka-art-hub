@@ -1,12 +1,5 @@
 import type { RouteProps } from "react-router";
-import {
-  Artworks,
-  Commission,
-  Home,
-  Materials,
-  Social,
-  SupportMe,
-} from "./pages";
+import { Commission, Home, Materials, Social, SupportMe } from "./pages";
 
 export const paths = {
   home: "/",
@@ -23,5 +16,4 @@ export const routes: RouteProps[] = [
   { path: paths.commission, element: <Commission /> },
   { path: paths.social, element: <Social /> },
   { path: paths.supportMe, element: <SupportMe /> },
-  { path: paths.artworks, element: <Artworks /> },
 ];

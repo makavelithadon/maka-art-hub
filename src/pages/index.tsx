@@ -3,4 +3,3 @@ export { Commission } from "./Commission";
 export { Materials } from "./Materials";
 export { Social } from "./Social";
 export { SupportMe } from "./SupportMe";
-export { Artworks } from "./Artworks";

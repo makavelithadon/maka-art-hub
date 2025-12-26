@@ -1,14 +1,15 @@
 import { createContext, useState, type PropsWithChildren } from "react";
 import { IntlProvider } from "react-intl";
 
-import en from "./../../lang/en.json";
-import fr from "./../../lang/fr.json";
+import { en } from "../../lang/en";
+import { fr } from "../../lang/fr";
 import { getBrowserLocale } from "../../utils/locale";
 
 import {
   getPreferredLanguageFromLS,
   setPreferredLanguageFromLS,
 } from "./../../utils/localStorage";
+import type { Translation } from "../../lang";
 
 const frLanguage = "fr-FR";
 const enLanguage = "en-US";
@@ -39,7 +40,7 @@ const getLanguage = (): LanguageContextType["locale"] => {
   );
 };
 
-const loadMessages = (locale: string): { [key: string]: string } => {
+const loadMessages = (locale: string): Record<Translation, string> => {
   switch (locale) {
     case "en-US":
       return en;
@@ -48,7 +49,7 @@ const loadMessages = (locale: string): { [key: string]: string } => {
   }
 };
 
-export const Localization = ({ children }: PropsWithChildren) => {
+export const LocalizationProvider = ({ children }: PropsWithChildren) => {
   const language = getLanguage();
   const [locale, setLocale] = useState<LanguageContextType["locale"]>(language);
 

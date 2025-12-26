@@ -1,16 +1,24 @@
-import { useIntl } from "react-intl";
 import { Link } from "react-router";
 import { paths } from "../routes";
+import { useTypedIntl } from "../lang/hooks";
 
 export const Home = () => {
-  const intl = useIntl();
+  const intl = useTypedIntl();
 
   return (
     <>
       <div className="description">
         <h1 className="poppins-bold fz-s">🇫🇷 Anime Paint Artist</h1>
+        <p
+          className="mb-1 poppins-regular"
+          dangerouslySetInnerHTML={{
+            __html: `${intl.formatMessage({ id: "bio" })}`,
+          }}
+        />
         <h2>
-          <span className="poppins-medium fz-m">Have a wonderful day – </span>
+          <span className="poppins-medium fz-m">
+            {intl.formatMessage({ id: "have-a-good-day" })} –{" "}
+          </span>
           <span className="zooja fz-l">Maka Art ❤️</span>
         </h2>
       </div>
@@ -19,7 +27,7 @@ export const Home = () => {
           <li>
             <Link className="button" to={paths.materials}>
               {intl.formatMessage({
-                id: "materials",
+                id: "materials.link",
               })}
             </Link>
           </li>
@@ -41,13 +49,6 @@ export const Home = () => {
             <Link className="button" to={paths.supportMe}>
               {intl.formatMessage({
                 id: "supportMe",
-              })}
-            </Link>
-          </li>
-          <li>
-            <Link className="button" to={paths.artworks}>
-              {intl.formatMessage({
-                id: "artworks",
               })}
             </Link>
           </li>

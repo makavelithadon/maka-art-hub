@@ -3,7 +3,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 @media screen and (min-width: 560px) {
@@ -15,7 +15,7 @@
 .container {
   position: relative;
   max-width: 480px;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 @media screen and (min-width: 560px) {
@@ -96,8 +96,9 @@
 
 h1 {
   text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 1.5em;
   line-height: 1.1;
+  margin-bottom: 2em;
 }
 
 h2 {
@@ -200,4 +201,19 @@ footer {
 
 .lang-switcher-item.active {
   opacity: 1;
+}
+
+.commission {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+hr {
+  opacity: 0;
+  margin: 3rem auto;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
 }

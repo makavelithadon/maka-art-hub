@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router";
 import "./index.css";
 import App from "./App.tsx";
-import { Localization as LocalizationProvider } from "./providers/Localization/index.tsx";
+import { LocalizationProvider } from "./providers/Localization/index.tsx";
 
 const root = document.getElementById("root")!;
 

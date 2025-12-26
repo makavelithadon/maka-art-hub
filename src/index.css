@@ -162,6 +162,28 @@ body {
   font-style: italic;
 }
 
-ul {
+ul,
+ol {
   margin: 0;
+}
+
+p {
+  margin-bottom: 3em;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.white-space-nowrap {
+  white-space: nowrap;
+}
+
+blockquote {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 38px;
+  color: #012161;
+  padding: 2.5em 4em;
+  margin: 0 auto;
 }
