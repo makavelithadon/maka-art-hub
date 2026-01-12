@@ -4,6 +4,9 @@ import { LangSwitcher } from "./lang/LangSwitcher";
 import { BackButton } from "./components/BackButton";
 import { useEffect } from "react";
 
+import logo from "./assets/logo.png";
+import profilePic from "./assets/picture.png";
+
 export const Layout = () => {
   const location = useLocation();
 
@@ -26,13 +29,13 @@ export const Layout = () => {
         <Link to="/">
           <img
             className="picture"
-            src="src/assets/picture.png"
+            src={profilePic}
             alt="Maka Art profile picture"
           />
         </Link>
         <img
           className="logo"
-          src="src/assets/logo.png"
+          src={logo}
           alt="Maka Art logo"
           style={{ marginBottom: "3rem" }}
         />
