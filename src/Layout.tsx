@@ -39,7 +39,7 @@ export const Layout = () => {
           alt="Maka Art logo"
           style={{ marginBottom: "3rem" }}
           width={130}
-          height={63}
+          height={43}
         />
         <Outlet />
       </div>
