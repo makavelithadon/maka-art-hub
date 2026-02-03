@@ -102,7 +102,7 @@ export const en = {
         <p>Available sizes:</p>
 
         <ul class="text-align-left">
-            <li>- <strong>20 x 25cm</strong> or <strong>A4 format</strong> for <strong>glass paintings</strong></li>
+            <li>- <strong>20 x 25cm</strong>, <strong>A4 or A3 format</strong> for <strong>glass paintings</strong></li>
             <li>- almost all sizes are available for canvas paintings</li>
             <li>- <strong>A4</strong> and <strong>A3</strong> for paintings on paper or special acrylic sheets</li>
         </ul>
@@ -183,7 +183,7 @@ export const en = {
                 <path d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z"></path>
                 <path d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z"></path>
             </svg>
-        Send my request via Instagram
+        Send your request via Instagram
         </a>
     </li>
     <li>
@@ -220,7 +220,7 @@ export const en = {
     </g>
   </g>
 </svg>
-Send my request by email</a>
+Send your request by email</a>
     </li>
 </ul>
 `,

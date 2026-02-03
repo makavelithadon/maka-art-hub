@@ -104,7 +104,7 @@ export const fr: Record<Translation, string> = {
         <p>Les tailles disponibles sont :</p>
 
         <ul class="text-align-left">
-            <li>- <strong>20 x 25cm</strong> ou <strong>format A4</strong> pour les <strong>glass painting</strong></li>
+            <li>- <strong>20 x 25cm</strong>, <strong>format A4 ou A3</strong> pour les <strong>glass painting</strong></li>
             <li>- presque toutes les tailles pour les peintures sur toile</li>
             <li>- <strong>A4</strong> et <strong>A3</strong> pour les peintures sur papier ou feuille spéciale acrylique</li>
         </ul>
@@ -185,7 +185,7 @@ export const fr: Record<Translation, string> = {
                 <path d="M20,11.9c-4.5,0-8.1,3.7-8.1,8.1s3.7,8.1,8.1,8.1s8.1-3.7,8.1-8.1S24.5,11.9,20,11.9z M20,25.2c-2.9,0-5.2-2.3-5.2-5.2 s2.3-5.2,5.2-5.2s5.2,2.3,5.2,5.2S22.9,25.2,20,25.2z"></path>
                 <path d="M30.6,11.6c0,1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9s0.8-1.9,1.9-1.9C29.8,9.7,30.6,10.5,30.6,11.6z"></path>
             </svg>
-        Envoyer ma demande via Instagram
+        Envoyez votre demande via Instagram
         </a>
     </li>
     <li>
@@ -222,7 +222,7 @@ export const fr: Record<Translation, string> = {
     </g>
   </g>
 </svg>
-Envoyer ma demande par e-mail</a>
+Envoyez votre demande par e-mail</a>
     </li>
 </ul>
 `,
