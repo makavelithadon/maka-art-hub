@@ -2,7 +2,7 @@ import { FormattedMessage } from "react-intl";
 import { Link, Outlet, useLocation } from "react-router";
 import { LangSwitcher } from "./lang/LangSwitcher";
 import { BackButton } from "./components/BackButton";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 
 import logo from "./assets/logo.png";
 import profilePic from "./assets/picture.png";
@@ -12,15 +12,15 @@ export const Layout = () => {
 
   // Scroll to top on page change to prevent too more scroll on each page
   // As of now we don't want to animate the scroll to top
-  useEffect(() => {
-    if (window.scrollY > 0) {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "instant",
-      });
-    }
-  });
+  //   useEffect(() => {
+  //     if (window.scrollY > 0) {
+  //       window.scrollTo({
+  //         top: 0,
+  //         left: 0,
+  //         behavior: "instant",
+  //       });
+  //     }
+  //   });
 
   return (
     <>
@@ -38,6 +38,8 @@ export const Layout = () => {
           src={logo}
           alt="Maka Art logo"
           style={{ marginBottom: "3rem" }}
+          width={130}
+          height={63}
         />
         <Outlet />
       </div>
