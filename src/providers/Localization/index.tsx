@@ -14,10 +14,10 @@ import type { Translation } from "../../lang";
 const frLanguage = "fr-FR";
 const enLanguage = "en-US";
 
+type LanguageType = typeof frLanguage | typeof enLanguage;
+
 // eslint-disable-next-line react-refresh/only-export-components
 export const availableLanguages = [frLanguage, enLanguage];
-
-type LanguageType = typeof frLanguage | typeof enLanguage;
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const defaultLocale = frLanguage;
@@ -33,10 +33,17 @@ export const LanguageContext = createContext<LanguageContextType | null>(null);
 // 1. Check from local storage
 // 2. Check from navigator language
 // 3. Fallback to FR 🇫🇷
-const getLanguage = (): LanguageContextType["locale"] => {
+const initLanguage = (): LanguageContextType["locale"] => {
+  const localeFromLS = getPreferredLanguageFromLS() as
+    | LanguageContextType["locale"]
+    | null;
+  const localeFromBrowser = getBrowserLocale();
+
   return (
-    (getPreferredLanguageFromLS() as LanguageContextType["locale"] | null) ||
-    (getBrowserLocale() === "en-US" ? "en-US" : defaultLocale)
+    localeFromLS ||
+    (availableLanguages.includes(localeFromBrowser)
+      ? (localeFromBrowser as LanguageContextType["locale"])
+      : frLanguage)
   );
 };
 
@@ -50,16 +57,16 @@ const loadMessages = (locale: string): Record<Translation, string> => {
 };
 
 export const LocalizationProvider = ({ children }: PropsWithChildren) => {
-  const language = getLanguage();
+  const language = initLanguage();
   const [locale, setLocale] = useState<LanguageContextType["locale"]>(language);
 
   return (
     <LanguageContext.Provider
       value={{
         locale,
-        setLocale: (l) => {
-          setLocale(l);
-          setPreferredLanguageFromLS(l);
+        setLocale: (locale) => {
+          setLocale(locale);
+          setPreferredLanguageFromLS(locale);
         },
       }}
     >
