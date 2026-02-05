@@ -4,11 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
 }
 
 @media screen and (min-width: 560px) {
   #root {
     padding: 6rem 2rem 2rem 2rem;
+    width: auto;
   }
 }
 
