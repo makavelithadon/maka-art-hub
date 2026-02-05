@@ -7,21 +7,19 @@ import { BackButton } from "./components/BackButton";
 import logo from "./assets/logo.png";
 import profilePic from "./assets/picture.png";
 import { Analytics } from "@vercel/analytics/react";
+import { useEffect } from "react";
+import { paths } from "./routes";
+
+if ("scrollRestoration" in window.history) {
+  window.history.scrollRestoration = "manual";
+}
 
 export const Layout = () => {
-  const location = useLocation();
+  const { pathname } = useLocation();
 
-  // Scroll to top on page change to prevent too more scroll on each page
-  // As of now we don't want to animate the scroll to top
-  //   useEffect(() => {
-  //     if (window.scrollY > 0) {
-  //       window.scrollTo({
-  //         top: 0,
-  //         left: 0,
-  //         behavior: "instant",
-  //       });
-  //     }
-  //   });
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <>
@@ -45,7 +43,7 @@ export const Layout = () => {
         <Outlet />
         <Analytics />
       </div>
-      {location.pathname !== "/" ? (
+      {pathname !== paths.home ? (
         <div style={{ display: "flex", justifyContent: "center" }}>
           <BackButton />
         </div>
