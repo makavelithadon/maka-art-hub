@@ -6,6 +6,7 @@ import { BackButton } from "./components/BackButton";
 
 import logo from "./assets/logo.png";
 import profilePic from "./assets/picture.png";
+import { Analytics } from "@vercel/analytics/react";
 
 export const Layout = () => {
   const location = useLocation();
@@ -42,6 +43,7 @@ export const Layout = () => {
           height={43}
         />
         <Outlet />
+        <Analytics />
       </div>
       {location.pathname !== "/" ? (
         <div style={{ display: "flex", justifyContent: "center" }}>

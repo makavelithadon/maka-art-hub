@@ -11,6 +11,7 @@
     "build:surge": "npm run build && cp dist/index.html dist/200.html && npx surge dist adaptable-silk.surge.sh"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "react": "^19.2.3",
     "react-dom": "^19.2.0",
     "react-intl": "^8.0.6",
