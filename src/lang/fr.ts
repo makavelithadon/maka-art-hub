@@ -21,6 +21,7 @@ export const fr: Record<Translation, string> = {
   back: "Retour",
   canvas: "Toile sur chassis",
   paper: "Sur papier",
+  lastYoutubeVideo: "Ma dernière vidéo Youtube 👇",
   "glass-painting": "Peinture sur verre",
   "materials.link": "Mon matériel",
   "materials.acrylic": "Peinture acrylique",

@@ -19,6 +19,7 @@ export const en = {
   back: "Back",
   canvas: "Canvas",
   paper: "Sheet/paper",
+  lastYoutubeVideo: "My last Youtube video 👇",
   "glass-painting": "Glass Painting",
   "materials.link": "Materials I use",
   "materials.acrylic": "Acrylic painting - my essentials",

@@ -10,6 +10,9 @@ import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
 import { paths } from "./routes";
 
+import LiteYouTubeEmbed from "react-lite-youtube-embed";
+import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+
 if ("scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
 }
@@ -46,6 +49,21 @@ export const Layout = () => {
       {pathname !== paths.home ? (
         <div style={{ display: "flex", justifyContent: "center" }}>
           <BackButton />
+        </div>
+      ) : null}
+      {pathname === paths.home ? (
+        <div style={{ display: "inline-block", marginTop: 40 }}>
+          <h3 style={{ fontFamily: "Zooja Pro", fontSize: "1.5rem" }}>
+            <FormattedMessage id="lastYoutubeVideo" />
+          </h3>
+          <div style={{ padding: "1.5rem", maxWidth: 400, margin: "0 auto" }}>
+            <LiteYouTubeEmbed
+              id="6bZQ55K5i5Q"
+              title="Maka Art - Paint With Me - Howl's Moving Castle"
+              autoplay
+              lazyLoad
+            />
+          </div>
         </div>
       ) : null}
       <footer>
