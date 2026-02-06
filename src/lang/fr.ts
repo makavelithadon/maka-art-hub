@@ -1,6 +1,7 @@
 import type { Translation } from ".";
 
 export const fr: Record<Translation, string> = {
+  description: "🇫🇷 Artiste Peintre anime et manga",
   PayPalMe: "PayPal.me",
   "have-a-good-day": "Je te souhaite une très belle journée",
   bio: `

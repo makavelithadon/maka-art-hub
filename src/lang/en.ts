@@ -1,4 +1,5 @@
 export const en = {
+  description: "🇫🇷 Anime & Manga Paint Artist",
   PayPalMe: "PayPal.me",
   "have-a-good-day": "Have a wonderful day",
   bio: `

@@ -8,7 +8,9 @@ export const Home = () => {
   return (
     <>
       <div className="description">
-        <h1 className="poppins-bold fz-s">🇫🇷 Anime Paint Artist</h1>
+        <h1 className="poppins-bold fz-s">
+          {intl.formatMessage({ id: "description" })}
+        </h1>
         <p
           className="mb-1 poppins-regular"
           dangerouslySetInnerHTML={{
