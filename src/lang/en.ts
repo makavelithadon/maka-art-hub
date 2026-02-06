@@ -164,7 +164,7 @@ export const en = {
     </li>
     <li>
         👉 PayPal fees are not included in the total price and remain
-        the responsibility of the client.
+        the responsibility of the client. Here’s a reliable website that I use, which allows you to calculate them: <a href="https://www.salecalc.com/paypal">https://www.salecalc.com/paypal</a>
     </li>
     <li>
         👉 I will contact you at the beginning of the process and once the painting is finished. You may also contact me at any time to request a progress update.

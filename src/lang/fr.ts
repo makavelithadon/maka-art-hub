@@ -166,7 +166,7 @@ export const fr: Record<Translation, string> = {
     </li>
     <li>
         👉 Les frais PayPal ne sont pas inclus dans le prix total et restent
-        à la charge du client.
+        à la charge du client. Voici un site web fiable que j'utilise et qui permet de les calculer : <a href="https://www.salecalc.com/paypal">https://www.salecalc.com/paypal</a>
     </li>
     <li>
         👉 Je vous contacterai au début de la réalisation ainsi qu’à la fin de la peinture. Vous pouvez également me contacter à tout moment pour obtenir un état d’avancement.
