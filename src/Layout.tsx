@@ -67,7 +67,6 @@ export const Layout = () => {
             <LiteYouTubeEmbed
               id="6bZQ55K5i5Q"
               title="Maka Art - Paint With Me - Howl's Moving Castle"
-              autoplay
               lazyLoad
             />
           </div>
