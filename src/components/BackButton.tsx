@@ -1,20 +1,18 @@
 import { useLocation, useNavigate } from "react-router";
 import { useTypedIntl } from "../lang/hooks";
-import { paths, routes } from "../routes";
+import { paths } from "../routes";
+import { is404Route } from "../utils";
 
 export const BackButton = () => {
   const { pathname } = useLocation();
   const navigate = useNavigate();
   const intl = useTypedIntl();
 
-  const is404Route =
-    routes.findIndex((route) => route.path === pathname) === -1;
-
   return (
     <button
       className="button"
       onClick={() => {
-        if (is404Route) {
+        if (is404Route(pathname)) {
           navigate(paths.home, { replace: true });
           return;
         }
