@@ -1,12 +1,26 @@
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { useTypedIntl } from "../lang/hooks";
+import { paths, routes } from "../routes";
 
 export const BackButton = () => {
+  const { pathname } = useLocation();
   const navigate = useNavigate();
   const intl = useTypedIntl();
 
+  const is404Route =
+    routes.findIndex((route) => route.path === pathname) === -1;
+
   return (
-    <button className="button" onClick={() => navigate(-1)}>
+    <button
+      className="button"
+      onClick={() => {
+        if (is404Route) {
+          navigate(paths.home, { replace: true });
+          return;
+        }
+        navigate(-1);
+      }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"

@@ -8,7 +8,7 @@ import logo from "./assets/logo.png";
 import profilePic from "./assets/picture.png";
 import { Analytics } from "@vercel/analytics/react";
 import { useEffect } from "react";
-import { paths } from "./routes";
+import { paths, routes } from "./routes";
 
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
@@ -23,6 +23,8 @@ export const Layout = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
+
+  const matchedRoute = routes.find((route) => route.path === pathname);
 
   return (
     <>
@@ -43,6 +45,11 @@ export const Layout = () => {
           width={130}
           height={43}
         />
+        {matchedRoute && matchedRoute.title ? (
+          <h1 className="zooja">
+            <FormattedMessage id={matchedRoute.title} />
+          </h1>
+        ) : null}
         <Outlet />
         <Analytics />
       </div>

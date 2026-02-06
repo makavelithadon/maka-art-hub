@@ -225,4 +225,5 @@ Send your request by email</a>
     </li>
 </ul>
 `,
+  notFound: `Error 404:<br />Page not found!`,
 } as const;

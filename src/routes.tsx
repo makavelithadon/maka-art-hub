@@ -1,5 +1,13 @@
 import type { RouteProps } from "react-router";
-import { Commission, Home, Materials, Social, SupportMe } from "./pages";
+import {
+  Commission,
+  Home,
+  Materials,
+  Social,
+  SupportMe,
+  NotFound,
+} from "./pages";
+import { en } from "./lang/en";
 
 export const paths = {
   home: "/",
@@ -10,10 +18,13 @@ export const paths = {
   artworks: "/artworks",
 };
 
-export const routes: RouteProps[] = [
+export type ExtendedRouteProps = RouteProps & { title?: keyof typeof en };
+
+export const routes: ExtendedRouteProps[] = [
   { index: true, path: paths.home, element: <Home /> },
-  { path: paths.materials, element: <Materials /> },
-  { path: paths.commission, element: <Commission /> },
-  { path: paths.social, element: <Social /> },
-  { path: paths.supportMe, element: <SupportMe /> },
+  { path: paths.materials, element: <Materials />, title: "materials.link" },
+  { path: paths.commission, element: <Commission />, title: "comissionInfo" },
+  { path: paths.social, element: <Social />, title: "socialLinks" },
+  { path: paths.supportMe, element: <SupportMe />, title: "supportMe" },
+  { path: "*", element: <NotFound />, title: "notFound" },
 ];

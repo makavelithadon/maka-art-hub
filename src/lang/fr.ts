@@ -227,4 +227,5 @@ Envoyez votre demande par e-mail</a>
     </li>
 </ul>
 `,
+  notFound: `Erreurr 404 :<br />Cette page n'existe pas!`,
 };
