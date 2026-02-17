@@ -9,7 +9,12 @@ export const SupportMe = () => {
       <p>{intl.formatMessage({ id: "tip-intro" })}</p>
       <ul>
         <li>
-          <Link className="button" to="https://paypal.me/rduconseil">
+          <Link
+            className="button"
+            to="https://paypal.me/rduconseil"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -41,7 +46,12 @@ export const SupportMe = () => {
           </Link>
         </li>
         <li>
-          <Link className="button" to="https://ko-fi.com/maka_art">
+          <Link
+            className="button"
+            to="https://ko-fi.com/maka_art"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src="https://storage.ko-fi.com/cdn/logomarkLogo.png" />
             {intl.formatMessage({
               id: "kofi",
