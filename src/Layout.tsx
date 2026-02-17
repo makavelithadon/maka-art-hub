@@ -7,11 +7,11 @@ import { BackButton } from "./components/BackButton";
 import logo from "./assets/logo.png";
 import profilePic from "./assets/picture.png";
 import { Analytics } from "@vercel/analytics/react";
-import { useEffect } from "react";
-import { paths, routes } from "./routes";
+import { paths } from "./routes";
 
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
+import { useCurrentRoute, useScrollToTop } from "./hooks";
 
 if ("scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
@@ -19,12 +19,9 @@ if ("scrollRestoration" in window.history) {
 
 export const Layout = () => {
   const { pathname } = useLocation();
+  const currentRoute = useCurrentRoute();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
-
-  const matchedRoute = routes.find((route) => route.path === pathname);
+  useScrollToTop();
 
   return (
     <>
@@ -45,9 +42,9 @@ export const Layout = () => {
           width={130}
           height={43}
         />
-        {matchedRoute && matchedRoute.title ? (
+        {currentRoute && currentRoute.title ? (
           <h1 className="zooja">
-            <FormattedMessage id={matchedRoute.title} />
+            <FormattedMessage id={currentRoute.title} />
           </h1>
         ) : null}
         <Outlet />
