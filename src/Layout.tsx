@@ -2,7 +2,6 @@ import { FormattedMessage } from "react-intl";
 import { Link, Outlet, useLocation } from "react-router";
 import { LangSwitcher } from "./lang/LangSwitcher";
 import { BackButton } from "./components/BackButton";
-// import { useEffect } from "react";
 
 import logo from "./assets/logo.png";
 import profilePic from "./assets/picture.png";
@@ -12,6 +11,7 @@ import { paths } from "./routes";
 import LiteYouTubeEmbed from "react-lite-youtube-embed";
 import "react-lite-youtube-embed/dist/LiteYouTubeEmbed.css";
 import { useCurrentRoute, useScrollToTop } from "./hooks";
+import { Footer } from "./components/Footer";
 
 if ("scrollRestoration" in window.history) {
   window.history.scrollRestoration = "manual";
@@ -69,12 +69,7 @@ export const Layout = () => {
           </div>
         </div>
       ) : null}
-      <footer>
-        <p className="fz-xl mb-1">
-          <FormattedMessage id="footer" />
-        </p>
-        <p className="poppins-medium">©Maka Art – {new Date().getFullYear()}</p>
-      </footer>
+      <Footer />
     </>
   );
 };
