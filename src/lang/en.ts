@@ -35,7 +35,7 @@ export const en = {
     before sending a request. <br>Thank you!
   </em>
 </p>
-<h1>how to order&nbsp;&nbsp;<span class="zooja fz-xl">?</span></h1>
+<h1>how to order&nbsp;&nbsp;<span class="title fz-xl">?</span></h1>
   <ol class="text-align-left">
     <li>
         Send a complete request including your 
@@ -140,7 +140,7 @@ export const en = {
     </li>
   </ul>
   <hr>
-<h1>additional information&nbsp;&nbsp;<span class="zooja fz-xl">!</span></h1>
+<h1>additional information&nbsp;&nbsp;<span class="title fz-xl">!</span></h1>
   <ul>
     <li>
         👉 The painting process can take

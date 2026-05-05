@@ -43,7 +43,7 @@ export const Layout = () => {
           height={43}
         />
         {currentRoute && currentRoute.title ? (
-          <h1 className="zooja">
+          <h1>
             <FormattedMessage id={currentRoute.title} />
           </h1>
         ) : null}
@@ -57,7 +57,12 @@ export const Layout = () => {
       ) : null}
       {pathname === paths.home ? (
         <div style={{ display: "inline-block", marginTop: 40 }}>
-          <h3 style={{ fontFamily: "Zooja Pro", fontSize: "1.5rem" }}>
+          <h3
+            style={{
+              fontFamily: "Special Gothic Expanded One",
+              fontSize: "1.5rem",
+            }}
+          >
             <FormattedMessage id="lastYoutubeVideo" />
           </h3>
           <div style={{ padding: "1.5rem", maxWidth: 400, margin: "0 auto" }}>

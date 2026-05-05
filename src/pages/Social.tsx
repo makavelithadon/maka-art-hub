@@ -6,7 +6,7 @@ export const Social = () => {
       <li>
         <Link
           to="https://www.youtube.com/@MakaArtYT"
-          className="button fz-l"
+          className="button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -19,7 +19,7 @@ export const Social = () => {
       <li>
         <Link
           to="https://www.instagram.com/maka__a_r_t"
-          className="button fz-l"
+          className="button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -34,7 +34,7 @@ export const Social = () => {
       <li>
         <Link
           to="https://www.facebook.com/romuald.duconseil.5"
-          className="button fz-l"
+          className="button"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -47,7 +47,7 @@ export const Social = () => {
       <li>
         <Link
           to="https://www.tiktok.com/@maka__a_r_t"
-          className="button fz-l"
+          className="button"
           target="_blank"
           rel="noopener noreferrer"
         >

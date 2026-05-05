@@ -6,7 +6,7 @@ export const Footer = () => {
       <p className="fz-xl mb-1">
         <FormattedMessage id="footer" />
       </p>
-      <p className="poppins-medium">©Maka Art – {new Date().getFullYear()}</p>
+      <p className="text-medium">©Maka Art – {new Date().getFullYear()}</p>
     </footer>
   );
 };

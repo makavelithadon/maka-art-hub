@@ -5,7 +5,7 @@ export const NotFound = () => {
 
   return (
     <div
-      className="poppins-black"
+      className="text-black"
       style={{ marginTop: "4rem", marginBottom: "4rem", fontSize: "1.75rem" }}
       dangerouslySetInnerHTML={{
         __html: `${intl.formatMessage({ id: "notFound" })}`,

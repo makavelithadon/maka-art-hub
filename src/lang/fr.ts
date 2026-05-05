@@ -37,7 +37,7 @@ export const fr: Record<Translation, string> = {
     avant d’envoyer une demande. <br>Merci !
   </em>
 </p>
-<h1>comment commander&nbsp;&nbsp;<span class="zooja fz-xl">?</span></h1>
+<h1>comment commander&nbsp;&nbsp;<span class="title fz-xl">?</span></h1>
   <ol class="text-align-left">
     <li>
         Envoyez une demande complète en précisant votre 
@@ -78,7 +78,7 @@ export const fr: Record<Translation, string> = {
 </p>
   <ul class="text-align-left">
     <li>
-        👉 Je peins uniquement des personnages 
+        👉 Je peinds uniquement des personnages 
         <strong>anime ou manga</strong>.
     </li>
     <li>
@@ -142,7 +142,7 @@ export const fr: Record<Translation, string> = {
     </li>
   </ul>
   <hr>
-<h1>informations supplémentaires&nbsp;&nbsp;<span class="zooja fz-xl">!</span></h1>
+<h1>informations supplémentaires&nbsp;&nbsp;<span class="title fz-xl">!</span></h1>
   <ul>
     <li>
         👉 Le processus de peinture peut prendre
